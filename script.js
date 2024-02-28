@@ -24,12 +24,12 @@ const map = new mapboxgl.Map({
 ADDING MAPBOX CONTROLS AS ELEMENTS ON MAP
 --------------------------------------------------------------------*/
 // Add search control to map overlay
-// Requires plugin as source in HTML body
+// Requires plugin as source in HTML
 map.addControl(
     new MapboxGeocoder({
         accessToken: mapboxgl.accessToken,
         mapboxgl: mapboxgl,
-        countries: "ca" //Limit to Canada only
+        countries: "ca" // Limit to Canada only
     })
 );
 
